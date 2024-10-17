@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: #f0f9ff;
+  font-size: 14px;
+}
+p {
+  font-size: 0.875rem; /* tamaño correspondiente a text-sm */
+  line-height: 1.25rem; /* también puedes ajustar el line-height si es necesario */
+}
+
+button {
+  @apply transform transition-transform duration-200;
+}
+
+button:active {
+  @apply scale-90 bg-gray-100;
+}
